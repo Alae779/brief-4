@@ -1,0 +1,1 @@
+document.querySelector('table tr:first-child > th:nth-child(3)').style.background = "red";

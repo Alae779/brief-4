@@ -1,114 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-</style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
 </head>
+
 <body>
     <section id="allsec" class="firstsection">
-    <div class="head">
-    <h1>CHOIX DE L'EVENEMENT</h1>
-    <hr>
-    </div>
-    <div class="eventos" id="eventas">
-    <div class="firstwo" id="firsttwo">
-    <div class="border" id="borderr">
-    <div class="events"  id="0">
-        <img src="img/festival.jpeg" alt="">
-        <h2>Music Festival</h2>
-        <div class="details" id="dets">
-        <ul>
-            <li>21 May 2026</li>
-            <li>Rio De Janeiro</li>
-            <li>3 places restantes</li>
-        </ul>
-        <div class="price" id="prix">
-        <h3>15$</h3>
-        <button onclick=aftereserve(0) style="height: 1.6rem;">Reserver</button>
+        <div class="head">
+            <h1>CHOIX DE L'EVENEMENT</h1>
+            <hr>
         </div>
+        <div class="eventos" id="eventas">
+            <div class="firstwo" id="firsttwo">
+                <div class="border" id="borderr">
+                    <div class="events" id="0">
+                        <img src="img/festival.jpeg" alt="">
+                        <h2>Music Festival</h2>
+                        <div class="details" id="dets">
+                            <div class="ull">
+                                <ul>
+                                    <li>21 May 2026</li>
+                                    <li>Rio De Janeiro</li>
+                                    <li>3 places restantes</li>
+                                    <div class="price" id="prix">
+                                <h3>15$</h3>
+                                </div>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                        <div class="pricex" id="prix">
+                                <button onclick=aftereserve(0)>Reserver</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="border" id="borderrr">
+                    <div class="events" id="1">
+                        <img src="img/stadium.jpeg" alt="">
+                        <h2>UCL Final Match</h2>
+                        <div class="details" id="detss">
+                            <ul>
+                                <li>08 October 2026</li>
+                                <li>Wembley-London</li>
+                                <li>12 places restantes</li>
+                                <div class="price" id="prixx">
+                                <h3>200$</h3>
+                            </div>
+                            </ul>
+                            
+                        </div>
+                        <div class="pricex" id="prixx">
+                                <button onclick=aftereserve(1)>Reserver</button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="lastwo" id="lasttwo">
+                <div class="border" id="bordersss">
+                    <div class="events" id="2">
+                        <img src="img/conferences.jpeg" alt="">
+                        <h2>Conférence Tech Innovation</h2>
+                        <div class="details" id="detsss">
+                            <ul>
+                                <li>11 September 2026</li>
+                                <li>Rio De Janeiro</li>
+                                <li>6 places restantes</li>
+                                <div class="price" id="prixxx">
+                                <h3>10$</h3>
+                            </div>
+                            </ul>
+                            
+                        </div>
+                        <div class="pricex" id="prixxx">
+                                <button onclick=aftereserve(2)>Reserver</button>
+                            </div>
+                    </div>
+                </div>
+                <div class="border" id="borderssss">
+                    <div class="events" id="3">
+                        <img src="img/art.jpeg" alt="">
+                        <h2>Exposition d'Art Moderne</h2>
+                        <div class="details" id="detssss">
+                            <ul>
+                                <li>08 October 2026</li>
+                                <li>Tokyo</li>
+                                <li>4 places restantes</li>
+                                <div class="price" id="prixxxx">
+                                    <h3>20$</h3>
+                                </div>
+                            </ul>
+                            
+                        </div>
+                        <div class="pricex" id="prixxxXX">
+                                <button onclick=aftereserve(3)>Reserver</button>
+                            </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    </div>
-    <div class="border" id="borderrr">
-    <div class="events"  id="1">
-        <img src="img/stadium.jpeg" alt="">
-        <h2>UCL Final Match</h2>
-        <div class="details" id="detss">
-        <ul>
-            <li>08 October 2026</li>
-            <li>Wembley-London</li>
-            <li>12 places restantes</li>
-        </ul>
-        <div class="price" id="prixx">
-        <h3>200$</h3>
-        <button onclick=aftereserve(1) style="height: 1.6rem;">Reserver</button>
+    </section>
+
+
+
+    <section id="secsec" class="secondsec">
+
+        <div id="head" class="head">
+            <h1>SELECTION DES BILLETS</h1>
+            <button onclick=retour()>Retour</button>
         </div>
+        <div id="dots" class="parent">
+            <div class="selected-event"></div>
+            <div class="count">
+                <button class="decrease">-</button>
+                <span>1</span>
+                <button class="increase">+</button>
+                <div class="btn-continue">
+                    <button>Continuer</button>
+                </div>
+            </div>
         </div>
-    </div>
-    </div>
-    </div>
-
-
-    <div class="lastwo" id="lasttwo">
-    <div class="border" id="bordersss">
-    <div class="events"  id="2">
-        <img src="img/conferences.jpeg" alt="">
-        <h2>Conférence Tech Innovation</h2>
-        <div class="details" id="detsss">
-        <ul>
-            <li>11 September 2026</li>
-            <li>Rio De Janeiro</li>
-            <li>6 places restantes</li>
-        </ul>
-        <div class="price" id="prixxx">
-        <h3>10$</h3>
-        <button onclick=aftereserve(2) style="height: 1.6rem;">Reserver</button>
-        </div>
-        </div>
-    </div>
-    </div>
-    <div class="border" id="borderssss">
-    <div class="events" id="3">
-        <img src="img/art.jpeg" alt="">
-        <h2>Exposition d'Art Moderne</h2>
-        <div class="details" id="detssss">
-        <ul>
-            <li>08 October 2026</li>
-            <li>Tokyo</li>
-            <li>4 places restantes</li>
-        </ul>
-        <div class="price" id="prixxxx">
-        <h3>20$</h3>
-        <button onclick=aftereserve(3) style="height: 1.6rem;">Reserver</button>
-        </div>
-        </div>
-    </div>
-    </div>
-    </div>
-    </div>
-</section>
+    </section>
 
 
 
-<section id="secsec" class="secondsec">
-    
-    <div id="head" class="head">
-        <h1>SELECTION DES BILLETS</h1>
-        <button>Retour</button>
-    </div>
-    <div id="dots" class="parent">
-        
-    </div>
-</section>
-
-
-
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
