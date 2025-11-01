@@ -187,3 +187,84 @@ ul li{
     background: linear-gradient(rgb(97, 96, 96), rgb(0, 0, 0));
     height: 100vh;
 }
+.thirdone{
+    background: rgb(121, 121, 121);
+    border-radius: 10px;
+}
+.thirdtwo{
+    background: rgb(121, 121, 121);
+    border-radius: 10px;
+    height: 30rem;
+    width: 45vw;
+}
+.allthird{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 3rem;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    width: 40rem;
+    padding-top: 10px;
+}
+.form label{
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+}
+.fourthform input{
+    margin-left: 5px;
+}
+.thirdform input{
+    margin-left: 45.47px;
+}
+.secondform input{
+    margin-left: 52.21px;
+}
+.firstform input{
+    margin-left: 26.77px;
+}
+.form input{
+    width: 30rem;
+    height: 2rem;
+    border: none;
+    border-radius: 10px;
+}
+#submit{
+    width: 10rem;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+}
+#p, #n, #e, #t{
+    align-self: flex-start;
+    padding-left: 5rem;
+}
+.formbtn{
+    display: flex;
+    flex-direction: column;
+}
+.tii{
+    display: flex;
+    justify-content: space-between;
+}
+.partc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+}
+#liste{
+    background: white;
+    width: 30rem;
+    height: 20rem;
+    border-radius: 10px;
+    justify-self: center;
+    align-self: center;
+}

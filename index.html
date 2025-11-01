@@ -118,18 +118,54 @@
             <button onclick=retour()>Retour</button>
         </div>
         <div id="dots" class="parent">
-            <div class="selected-event"></div>
+            <div class="selected-event">
+
+            </div>
             <div class="count">
                 <button class="decrease">-</button>
                 <span>1</span>
                 <button class="increase">+</button>
                 <div class="btn-continue">
-                    <button>Continuer</button>
+                    <button onclick=continuer()>Continuer</button>
                 </div>
             </div>
         </div>
     </section>
 
+
+    <section id="thirdsec">
+        <div id="head" class="head">
+            <h1>AJOUTE DES PARTICIPANTS</h1>
+            <button onclick=retour()>Retour</button>
+        </div>
+        <div class="allthird">
+        <div class="thirdone">
+            <form class="form">
+                    <label for="Prenom" id="p">Prénom:</label>
+                    <input type="text" required>
+                    <label for="Nom" id="n">Nom:</label>
+                    <input type="text" required>
+                    <label for="Email" id="e">Email:</label>
+                    <input id="eem" type="email" required>
+                    <label for="Téléphone" id="t">Téléphone:</label>
+                    <input id="telee" type="number" required>
+                
+                <input type="submit" id="submit" value="Entrer">
+            </form>
+        </div>
+        <div class="thirdtwo">
+            <div class="partc">
+                <div class="tii">
+                    <h2>Liste des participants</h2>
+                    <p id="numofpart">?</p>
+                </div>
+                <div id="liste">
+                    
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
 
 
     <script src="script.js"></script>
