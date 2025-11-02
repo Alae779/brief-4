@@ -30,7 +30,7 @@
                                     <li>Rio De Janeiro</li>
                                     <li>3 places restantes</li>
                                     <div class="price" id="prix">
-                                <h3>15$</h3>
+                                <h3>$<span class="pr">15</span></h3>
                                 </div>
                                 </ul>
                             </div>
@@ -51,7 +51,7 @@
                                 <li>Wembley-London</li>
                                 <li>12 places restantes</li>
                                 <div class="price" id="prixx">
-                                <h3>200$</h3>
+                                <h3>$<span class="pr">200</span></h3>
                             </div>
                             </ul>
                             
@@ -75,7 +75,7 @@
                                 <li>Rio De Janeiro</li>
                                 <li>6 places restantes</li>
                                 <div class="price" id="prixxx">
-                                <h3>10$</h3>
+                                <h3>$<span class="pr">10</span></h3>
                             </div>
                             </ul>
                             
@@ -95,7 +95,7 @@
                                 <li>Tokyo</li>
                                 <li>4 places restantes</li>
                                 <div class="price" id="prixxxx">
-                                    <h3>20$</h3>
+                                    <h3>$<span class="pr">20</span></h3>
                                 </div>
                             </ul>
                             
@@ -136,21 +136,21 @@
     <section id="thirdsec">
         <div id="head" class="head">
             <h1>AJOUTE DES PARTICIPANTS</h1>
-            <button onclick=retour()>Retour</button>
+            <button onclick=aftereserve()>Retour</button>
         </div>
         <div class="allthird">
         <div class="thirdone">
             <form class="form">
                     <label for="Prenom" id="p">Prénom:</label>
-                    <input type="text" required>
+                    <input class="inputs" id="prename" type="text" required>
                     <label for="Nom" id="n">Nom:</label>
-                    <input type="text" required>
+                    <input class="inputs" id="name" type="text" required>
                     <label for="Email" id="e">Email:</label>
-                    <input id="eem" type="email" required>
+                    <input class="inputs" id="eem" type="email" required>
                     <label for="Téléphone" id="t">Téléphone:</label>
-                    <input id="telee" type="number" required>
-                
-                <input type="submit" id="submit" value="Entrer">
+                    <input class="inputs" id="telee" type="number" required>
+                    
+                    <input type="submit" id="submit" value="Entrer">
             </form>
         </div>
         <div class="thirdtwo">
@@ -160,7 +160,7 @@
                     <p id="numofpart">?</p>
                 </div>
                 <div id="liste">
-                    
+
                 </div>
             </div>
         </div>

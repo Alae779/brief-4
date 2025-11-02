@@ -73,12 +73,19 @@ function DecrementEventFun() {
 }
 function IncrementEventFun() {
         counter.textContent = Number(counter.textContent) + 1;
+        const prix = document.getElementsByClassName("pr") ;
+        const totale = prix * Number(counter.textContent) ;
+        document.getElementsByClassName("pr").innerHTML = totale ;
 }
 document.getElementById("submit").addEventListener("click",function (event){
 
 event.preventDefault();
+var liste = document.getElementById("liste");
+var nom = document.getElementById("name").value;
+var prename = document.getElementById("prename").value;
 var tele = document.getElementById("telee").value;
 var email = document.getElementById("eem").value;
+var allinputs = document.getElementsByClassName("inputs");
 var emailregex = /^[a-zA-Z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$/;
 var teleregex = /^\d.{10,}$/;
 if (!emailregex.test(email)){
@@ -89,6 +96,12 @@ if(!teleregex.test(tele)){
 }
 else{
     alert("Ajoute avec succée");
+    for(element of allinputs){
+    document.getElementById("liste").innerHTML += element.value + `<br>` ;
+    }
+   document.getElementById("liste").innerHTML+=`<hr>`;
+    
 }
 });
-var liste = document.getElementById("liste");
+
+
